@@ -66,7 +66,7 @@
   color: darkslategrey;
 }
 .cardt{
-  max-width: 18rem;
+  width: 23rem;
   max-height:19rem;
   padding: 0;
   /* height: 15rem; */
@@ -169,11 +169,14 @@ cursor: pointer;
 }
 .bts{
   background-color: #002f34;
+  width: 100%;
+  
 }
 .bt{
   border:2px solid #002f34;
   color: #002f34;
-  padding:0 10.9rem ;
+  padding:0 9 rem ;
+  width: 100%;
 }
 .r1{
   width: 100%;

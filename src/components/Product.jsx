@@ -80,7 +80,7 @@ function Product() {
               </div>
                 </div>
               <div className="btns mt-4  w-full flex flex-col gap-3  items-center">
-                <button onClick={handleClicked} className=" gap-3 bts px-24 py-3 rounded-sm font-medium text-white flex items-center">
+                <button onClick={handleClicked} className=" gap-3 bts px-16 py-3  rounded-sm font-medium text-white flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
