@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Dropdown with SVG</title>
+  <style>
+    .custom-select {
+      position: relative;
+      width: 200px;
+    }
+
+    .custom-select-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      border: 1px solid #ccc;
+    }
+
+    .custom-options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      display: none;
+    }
+
+    .custom-option {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .custom-option:hover {
+      background-color: #f0f0f0;
+    }
+
+    .custom-option svg {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="custom-select">
+  <div class="custom-select-trigger">Select an option</div>
+  <div class="custom-options">
+    <div class="custom-option" data-value="option1">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zm3.707 7.293-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L7 8.586l3.293-3.293a1 1 0 1 1 1.414 1.414z"/>
+      </svg>
+      Option 1
+    </div>
+    <div class="custom-option" data-value="option2">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zM7 4.5A1.5 1.5 0 1 1 8.5 6 1.5 1.5 0 0 1 7 4.5zm0 2a1.5 1.5 0 1 0 1.5-1.5A1.5 1.5 0 0 0 7 6.5zm5 4a1 1 0 0 1-1 1H5a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1z"/>
+      </svg>
+      Option 2
+    </div>
+  </div>
+</div>
+
+<script>
+  const selectTrigger = document.querySelector('.custom-select-trigger');
+  const customOptions = document.querySelector('.custom-options');
+  const options = document.querySelectorAll('.custom-option');
+
+  selectTrigger.addEventListener('click', function() {
+    customOptions.style.display = customOptions.style.display === 'block' ? 'none' : 'block';
+  });
+
+  options.forEach(option => {
+    option.addEventListener('click', function() {
+      selectTrigger.textContent = this.textContent;
+      customOptions.style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
