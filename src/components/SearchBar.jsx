@@ -86,8 +86,10 @@ function SearchBar() {
   const navigate = useNavigate()
   const mobs = data
   const handleCLick = (mob) =>{
-    query = ''
+    setQuery('')
+    
     navigate('/details/' + mob.label , {state:{mobs,mob}})
+    setSearches([])
   }
   return (
     <div className="flex items-center search p-0">
