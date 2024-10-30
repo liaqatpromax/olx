@@ -11,7 +11,7 @@ const check = (
 const options = [
    'Newly Listed', 'Relevent Items', 'Higher price', 'Lower Price'
 ];
-const [active,setActive] = useState(null)
+const [active,setActive] = useState("Newly Listed")
 const [isRotated, setisRotated] = useState(false);
 const dispatch = useDispatch()
 const handleClick = (options) => {
