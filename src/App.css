@@ -175,7 +175,7 @@ cursor: pointer;
 .bt{
   border:2px solid #002f34;
   color: #002f34;
-  padding:0 9 rem ;
+  padding:0 9rem ;
   width: 100%;
 }
 .r1{
@@ -263,7 +263,7 @@ flex-wrap: wrap;
   margin: auto;
 }
 .heig{
-  height: 21rem !important; 
+  height: 21.6rem !important; 
 }
 .blocs{
   height: 10rem !important;
@@ -272,12 +272,10 @@ flex-wrap: wrap;
 };
 
 
-.ic:hover{
-  background-color:#c3fafa;
+.ict:hover{
+  background-color:#526969;
 }
-.ic:focus{
-  background-color: #a0e9e6;
-}
+
 .zi{
   z-index: 9999;
 }
@@ -289,4 +287,24 @@ flex-wrap: wrap;
   padding: 0.7rem 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+.search:active{
+  border-color: #a0e9e6;
+}
+.searchsuggestion{
+  top: 7rem;
+  /* border: 2px solid yellow; */
+  
+}
+.hv:hover{
+  background-color:#a0e9e6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.locs{
+  width: 14rem;
+
+}
+.spic{
+  width: 8rem;
 }

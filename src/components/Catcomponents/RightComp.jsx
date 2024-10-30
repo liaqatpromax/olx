@@ -72,7 +72,7 @@ function RightComp() {
             <svg
               className={`${
                 active === "blocks" ? "custom" : "cusm1"
-              } ic rounded-full p-1 ease-in cursor-pointer`}
+              } ict rounded-full p-1 ease-in duration-250 cursor-pointer`}
               onClick={handleClicke}
               xmlns="http://www.w3.org/2000/svg"
               height="32px"
@@ -91,7 +91,7 @@ function RightComp() {
               height="32px"
               className={`${
                 active === "boxes" ? "custom" : "custom1"
-              } rounded-full ic p-1 ease-in cursor-pointer`}
+              } rounded-full ict p-1 ease-in cursor-pointer`}
               viewBox="0 -960 960 960"
               width="32px"
               fill="#002f34"
@@ -108,7 +108,7 @@ function RightComp() {
           <Sort items={items} onSortChange={handleSortChange} />
         </ul>
       </div>
-      <div className={`products ${active} transition-all wid `}>
+      <div className={`products ${active} transition-all  wid `}>
         {items.map((mob) => {
           return (
             <Card
@@ -116,8 +116,8 @@ function RightComp() {
               onClick={() => handleClick(mob)}
               className={`${
                 active === "boxes"
-                  ? "w-72 heig"
-                  : "w-full mt-3 h-52  justify-between flex-row "
+                  ? "w-72 heig cursor-pointer"
+                  : "w-full mt-3 h-52 cursor-pointer justify-between flex-row "
               }`}
             >
               <Card.Img
@@ -132,7 +132,7 @@ function RightComp() {
               />
               <Card.Body
                 className={`${
-                  active === "boxes" ? "p-1   " : "w-full flex-row"
+                  active === "boxes" ? "px-3 pt-2 pb-0   " : "w-full flex-row"
                 }`}
               >
                 <Card.Title className="flex justify-between">

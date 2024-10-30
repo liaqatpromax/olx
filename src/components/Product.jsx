@@ -94,7 +94,7 @@ function Product() {
                   {clicked && <Signin/> }
                 </button>
                 
-                <button onClick={handleClicked} className=" gap-3  py-2 rounded-sm font-medium bt flex items-center">
+                <button onClick={handleClicked} className=" gap-1  py-2 rounded-sm font-medium bt flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#002f34"><path d="M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
                 Chat
                 </button>
@@ -165,10 +165,10 @@ function Product() {
         </div>
         <div className="border-t w-3/5 mt-3 py-5 px-3">
           <h1 className="typo font-semibold text-2xl">Related Ads</h1>
-          <div className="related flex gap-5 ">
+          <div className="related flex gap-1 flex-wrap ">
         { relate.map(cur => ( 
         <Card key={cur.label} onClick={() => handle(cur)}
-        style={{ width: "19rem", height: "20rem" }}
+        style={{ width: "15rem", height: "19rem" }}
         className=" border cursor-pointer cardt rounded  border-gray-200"
         >
         <Card.Img

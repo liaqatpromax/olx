@@ -36,12 +36,12 @@ const handleCLick = (mob) =>{
       style={{ height: "10rem" }}
       src={mob.img}
     />
-    <Card.Body className="p-3">
+    <Card.Body className="px-3 pt-2 pb-0">
       <Card.Title className="flex justify-between">
         <h1 className="font-medium text-lg">{mob.price}</h1>
         <img src={heart} alt="" />
       </Card.Title>
-      <Card.Text className="mt-4 gap-3 flex justify-start">
+      <Card.Text className="mt-4 gap-1 pb-6 flex justify-start">
         <div className="gap-3 flex flex-col">
           <p className="font-sm">{mob.label}</p>
           <div className="flex flex-col items-start ">

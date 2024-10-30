@@ -76,7 +76,7 @@ return (
         {options.map((item) => {
             return (
             <div
-                className="  border-gray-300  w-48 px-3 py-3 flex  justify-start items-center gap-3 hover:bg-green-200 rounded cursor-pointer duration-300 text-sm" 
+                className="  border-gray-300  w-48 px-3 py-3 flex hv  justify-start items-center gap-3 hover:bg-green-200 rounded cursor-pointer duration-300 text-sm" 
                 key={item}
                 onClick={() => handleClick(item)}
             >
