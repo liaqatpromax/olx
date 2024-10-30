@@ -288,9 +288,7 @@ flex-wrap: wrap;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.search:active{
-  border-color: #a0e9e6;
-}
+
 .searchsuggestion{
   top: 7rem;
   /* border: 2px solid yellow; */
